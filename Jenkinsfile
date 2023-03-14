@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 sh '/usr/share/man/man1/mvn test'   
+                 junit '**/test-reports/*.xml'   
               
             }
         }
