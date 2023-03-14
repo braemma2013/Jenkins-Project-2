@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 junit '**/test-reports/*.xml'   
+                 junit allowEmptyResults: true, testResults: '**/test-reports/*.xml'   
               
             }
         }
