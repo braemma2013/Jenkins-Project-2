@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools{
+      maven 'Maven'
+    }    
     stages {
         stage('Git') {
             steps {heckout scmGit(branches: [[name: '*/master']], extensions: [cleanBeforeCheckout()], userRemoteConfigs: [[url: 'https://github.com/braemma2013/Jenkins-Project-2.git']])
