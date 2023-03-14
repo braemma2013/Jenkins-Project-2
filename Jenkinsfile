@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 sh '/usr/share/maven/bin/mvn test'   
+                 sh '/usr/share/man/man1/mvn test'   
               
             }
         }
