@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'      
+                sh 'junit 'myproject/target/test-reports/*.xml''   
               
             }
         }
